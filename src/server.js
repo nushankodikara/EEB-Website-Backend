@@ -39,7 +39,7 @@ connection.connect();
 
 // connection.end();
 
-app.get("/", (req, res) => res.send("Hello World!"));
+app.get("/", (req, res) => res.send("Server Is Running."));
 
 // get email from post request
 app.post("/check", (req, res) => {
