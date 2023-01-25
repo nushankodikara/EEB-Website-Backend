@@ -9,7 +9,12 @@ require("dotenv").config();
 
 // apply them
 
-var allowedOrigins = ["http://localhost:5173", "https://euroeximbank.com"];
+var allowedOrigins = [
+	"http://localhost:5173",
+	"https://euroeximbank.com",
+	"https://www.euroeximbank.com",
+	"https://eeb-website.vercel.app",
+];
 app.use(
 	cors({
 		origin: function (origin, callback) {
