@@ -67,10 +67,10 @@ try {
 
 // connection.end();
 
-app.get("/backend-service", (req, res) => res.send("Server Is Running."));
+app.get("/backend-service/", (req, res) => res.send("Server Is Running."));
 
 // get email from post request
-app.post("/backend-service/check", (req, res) => {
+app.post("/backend-service/check/", (req, res) => {
     let check = req.body.check || "";
 
     // search database
